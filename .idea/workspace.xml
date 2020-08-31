@@ -25,11 +25,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86a763c8-03b1-4586-a8bc-c6c792efcbb3" name="Default Changelist" comment="首次提交测试">
-      <change afterPath="$PROJECT_DIR$/.idea/TFStudy.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="86a763c8-03b1-4586-a8bc-c6c792efcbb3" name="Default Changelist" comment="不知道啥修改，直接就提交了">
+      <change afterPath="$PROJECT_DIR$/autograd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mnist.py" beforeDir="false" afterPath="$PROJECT_DIR$/mnist.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +79,29 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.mnist">
+  <component name="RunManager" selected="Python.autograd">
+    <configuration name="autograd" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TFStudy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/autograd.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="csv" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TFStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -150,9 +172,11 @@
       <item itemvalue="Python.csv" />
       <item itemvalue="Python.lesson1" />
       <item itemvalue="Python.mnist" />
+      <item itemvalue="Python.autograd" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.autograd" />
         <item itemvalue="Python.mnist" />
         <item itemvalue="Python.lesson1" />
         <item itemvalue="Python.csv" />
@@ -177,7 +201,8 @@
       <workItem from="1597571686732" duration="6000" />
       <workItem from="1597571742401" duration="8196000" />
       <workItem from="1597721799124" duration="177000" />
-      <workItem from="1598793326900" duration="1319000" />
+      <workItem from="1598793326900" duration="2157000" />
+      <workItem from="1598841733763" duration="2138000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交测试">
       <created>1597560781287</created>
@@ -193,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597582627662</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="不知道啥修改，直接就提交了">
+      <created>1598794709932</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1598794709932</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -223,7 +255,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="首次提交测试" />
     <MESSAGE value="设置报警输出的等级" />
-    <option name="LAST_COMMIT_MESSAGE" value="设置报警输出的等级" />
+    <MESSAGE value="不知道啥修改，直接就提交了" />
+    <option name="LAST_COMMIT_MESSAGE" value="不知道啥修改，直接就提交了" />
   </component>
   <component name="WindowStateProjectService">
     <state x="522" y="177" key="#Notifications" timestamp="1597574381850">
@@ -234,10 +267,11 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1597577074907" />
-    <state x="244" y="0" key="CommitChangelistDialog2" timestamp="1598793723188">
+    <state x="244" y="0" key="CommitChangelistDialog2" timestamp="1598843784298">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="244" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1598793723188" />
+    <state x="244" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1160@0.0.1280.680" timestamp="1598843784298" />
+    <state x="244" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1598794696315" />
     <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1597584109380">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -246,22 +280,26 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="420" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1597571344764" />
-    <state width="1237" height="26" key="GridCell.Tab.0.bottom" timestamp="1598794639079">
+    <state width="1237" height="180" key="GridCell.Tab.0.bottom" timestamp="1598843722537">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="26" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1598794639079" />
-    <state width="1237" height="26" key="GridCell.Tab.0.center" timestamp="1598794639078">
+    <state width="1237" height="180" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1160@0.0.1280.680" timestamp="1598843722537" />
+    <state width="1237" height="26" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1598797002379" />
+    <state width="1237" height="180" key="GridCell.Tab.0.center" timestamp="1598843722537">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="26" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1598794639078" />
-    <state width="1237" height="26" key="GridCell.Tab.0.left" timestamp="1598794639078">
+    <state width="1237" height="180" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1160@0.0.1280.680" timestamp="1598843722537" />
+    <state width="1237" height="26" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1598797002379" />
+    <state width="1237" height="180" key="GridCell.Tab.0.left" timestamp="1598843722537">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="26" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1598794639078" />
-    <state width="1237" height="26" key="GridCell.Tab.0.right" timestamp="1598794639079">
+    <state width="1237" height="180" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1160@0.0.1280.680" timestamp="1598843722537" />
+    <state width="1237" height="26" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1598797002379" />
+    <state width="1237" height="180" key="GridCell.Tab.0.right" timestamp="1598843722537">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="26" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1598794639079" />
+    <state width="1237" height="180" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1160@0.0.1280.680" timestamp="1598843722537" />
+    <state width="1237" height="26" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1598797002379" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1597577020340">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -278,6 +316,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TFStudy$mnist.coverage" NAME="mnist Coverage Results" MODIFIED="1598793782034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TFStudy$lesson1.coverage" NAME="lesson1 Coverage Results" MODIFIED="1598793568700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TFStudy$autograd.coverage" NAME="autograd Coverage Results" MODIFIED="1598843659164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TFStudy$csv.coverage" NAME="csv Coverage Results" MODIFIED="1597562126044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
