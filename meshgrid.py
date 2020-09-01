@@ -1,5 +1,6 @@
 import tensorflow as tf
 import matplotlib.pyplot as plt
+import math
 
 
 def func(x):
@@ -7,7 +8,7 @@ def func(x):
     return z
 
 
-x = tf.linspace(0., 2*3.14, 500)
+x = tf.linspace(0., 2*math.pi, 500)
 y = tf.linspace(0., 2*3.14, 500)
 point_x, point_y = tf.meshgrid(x, y)
 points = tf.stack([point_x, point_y], axis=2)

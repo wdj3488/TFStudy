@@ -16,15 +16,19 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 #
 # print(tf.math.exp(a))
 
-(x, y), _ = datasets.mnist.load_data()
+(x, y), (x_test, y_test) = datasets.mnist.load_data()
 x = tf.convert_to_tensor(x, tf.float32)/255.
 y = tf.convert_to_tensor(y, tf.int32)
+x_test = tf.convert_to_tensor(x_test, tf.float32)/255.
+y_test = tf.convert_to_tensor(y_test, tf.int32)
 
 print(x.shape, y.shape, x.dtype, y.dtype)
 print(tf.reduce_min(x), tf.reduce_max(x))
 print(tf.reduce_min(y), tf.reduce_max(y))
 
 train_db = tf.data.Dataset.from_tensor_slices((x, y)).batch(128)
+test_db = tf.data.Dataset.from_tensor_slices((x_test, y_test)).batch(500)
+
 train_iter = iter(train_db)
 sample = next(train_iter)
 # sample[0] 为x  sample[1]为标签值
@@ -40,7 +44,7 @@ b3 = tf.Variable(tf.zeros([10]))
 
 learning_rate = 1e-3
 
-for epoch in range(10):
+for epoch in range(100):
     for step, (x, y) in enumerate(train_db):
         x = tf.reshape(x, [-1, 28*28])
         with tf.GradientTape() as tape:
@@ -63,5 +67,21 @@ for epoch in range(10):
         w3.assign_sub(grads[4]*learning_rate)
         b3.assign_sub(grads[5]*learning_rate)
 
-        if step%100 == 0:
+        if step % 100 == 0:
             print(epoch, step, 'loss:', float(loss))
+        total_correct, total_num = 0, 0
+        for step, (x, y) in enumerate(test_db):
+            x = tf.reshape(x, [-1, 28*28])
+            h1 = tf.nn.relu(tf.matmul(x, w1) + b1)
+            h2 = tf.nn.relu(tf.matmul(h1, w2) + b2)
+            out = tf.matmul(h2, w3) + b3
+            prob = tf.math.softmax(out)
+            pred = tf.argmax(prob, axis=1)
+            #print(pred)
+            pred = tf.cast(pred, dtype=tf.int32)
+            #print(y)
+            correct = tf.cast(tf.equal(pred, y), dtype=tf.int32)
+            total_correct += tf.reduce_sum(correct)
+            total_num += y.shape[0]
+        acc = total_correct/total_num
+        print('test acc:', acc)
