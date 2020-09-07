@@ -1,0 +1,12 @@
+import tensorflow as tf
+
+w = tf.Variable(tf.constant(1.0))
+x = tf.Variable(tf.constant(2.0))
+b = tf.Variable(tf.constant(3.0))
+
+with tf.GradientTape() as tape1:
+    with tf.GradientTape() as tape2:
+        y = w*x + b
+    [dy_dw, dy_db] = tape2.gradient(y, [w, b])
+d2y_dw2 = tape1.gradient(dy_dw, w)
+print(dy_dw, dy_db, d2y_dw2)
